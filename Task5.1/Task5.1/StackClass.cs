@@ -4,72 +4,70 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace Task5._1
 {
-    class ListClass
+    class StackClass
     {
-       List<int> list = new List<int>();
+        Stack<int> stack = new Stack<int>();
         private Logger logger = Logger.GetLogger();
 
         int beforeStartMethod;
         int afterStartMethod;
         int resultTime;
 
-        public void AddElementsInList()
+        public void AddElementsInStack()
         {
             beforeStartMethod = Environment.TickCount;
-            list.Add(1);
-            list.Add(2);
-            list.Add(3);
-            list.Add(4);
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+            stack.Push(4);
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-           
-            logger.Log("list.Add elements. " + resultTime+"ms");
+
+            logger.Log("Stack.Add elements. " + resultTime + "ms");
         }
 
-        public void RemoveElementsInList()
+        public void RemoveElementsInStack()
         {
             beforeStartMethod = Environment.TickCount;
-            list.RemoveAt(3);
-            list.RemoveAt(2);
-            list.RemoveAt(0);
+
+            stack.Pop();
+            stack.Pop();
+            stack.Pop();
+
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-           
-            logger.Log("list.Remove elements. " + resultTime + "ms");
+
+            logger.Log("Stack.Remove elements. " + resultTime + "ms");
         }
 
-        public void ReadItemsFromList()
+        public void ReadItemsFromStack()
         {
             beforeStartMethod = Environment.TickCount;
-            for (int i = 0; i < list.Count; i++)
+
+            foreach (int s in stack)
             {
-               int temp= list[i];
+                int a = s;
             }
+
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-          
-            logger.Log("list.Read elements. " + resultTime + "ms");
+
+            logger.Log("Stack.Read elements. " + resultTime + "ms");
         }
 
-        public void SearchItemsInList()
+        public void SearchItemsInStack()
         {
             beforeStartMethod = Environment.TickCount;
 
-            bool temp = list.Contains(1);
+            bool temp = stack.Contains(1);
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-           
-            logger.Log("list.Search element. " + resultTime + "ms"+"\n");
-        }
 
-        public void CloseLogger()
-        {
-            logger.Close();
+            logger.Log("Stack.Search element. " + resultTime + "ms"+"\n");
         }
     }
 }

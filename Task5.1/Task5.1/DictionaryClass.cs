@@ -4,72 +4,74 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace Task5._1
 {
-    class ListClass
+    class DictionaryClass
     {
-       List<int> list = new List<int>();
+        Dictionary<int, int> dictionary = new Dictionary<int, int>();
+
         private Logger logger = Logger.GetLogger();
 
         int beforeStartMethod;
         int afterStartMethod;
         int resultTime;
 
-        public void AddElementsInList()
+        public void AddElementsInDictionary()
         {
             beforeStartMethod = Environment.TickCount;
-            list.Add(1);
-            list.Add(2);
-            list.Add(3);
-            list.Add(4);
+            dictionary.Add(1,1);
+            dictionary.Add(2, 2);
+            dictionary.Add(3, 3);
+            dictionary.Add(4, 4);
 
-            afterStartMethod = Environment.TickCount;
-            resultTime = afterStartMethod - beforeStartMethod;
-           
-            logger.Log("list.Add elements. " + resultTime+"ms");
-        }
-
-        public void RemoveElementsInList()
-        {
-            beforeStartMethod = Environment.TickCount;
-            list.RemoveAt(3);
-            list.RemoveAt(2);
-            list.RemoveAt(0);
-            afterStartMethod = Environment.TickCount;
-            resultTime = afterStartMethod - beforeStartMethod;
-           
-            logger.Log("list.Remove elements. " + resultTime + "ms");
-        }
-
-        public void ReadItemsFromList()
-        {
-            beforeStartMethod = Environment.TickCount;
-            for (int i = 0; i < list.Count; i++)
-            {
-               int temp= list[i];
-            }
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
           
-            logger.Log("list.Read elements. " + resultTime + "ms");
+            logger.Log("Dictionary.Add elements. " + resultTime + "ms");
         }
 
-        public void SearchItemsInList()
+        public void RemoveElementsInDictionary()
         {
             beforeStartMethod = Environment.TickCount;
 
-            bool temp = list.Contains(1);
+            dictionary.Remove(4);
+            dictionary.Remove(2);
+            dictionary.Remove(1);
+            afterStartMethod = Environment.TickCount;
+            resultTime = afterStartMethod - beforeStartMethod;
+            
+            logger.Log("Dictionary.Remove elements. " + resultTime + "ms");
+        }
+
+        public void ReadItemsFromDictionary()
+        {
+            beforeStartMethod = Environment.TickCount;
+
+            foreach ( int s in dictionary.Keys)
+            {
+                int a = s;
+            }
+            foreach (int s in dictionary.Values)
+            {
+                int a = s;
+            }
+            afterStartMethod = Environment.TickCount;
+            resultTime = afterStartMethod - beforeStartMethod;
+
+           logger.Log("Dictionary.Read elements. " + resultTime + "ms");
+        }
+
+        public void SearchItemsInDictionaryt()
+        {
+            beforeStartMethod = Environment.TickCount;
+
+            bool temp = dictionary.ContainsKey(1);
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-           
-            logger.Log("list.Search element. " + resultTime + "ms"+"\n");
+
+            logger.Log("Dictionary.Search element. " + resultTime + "ms"+"\n");
         }
 
-        public void CloseLogger()
-        {
-            logger.Close();
-        }
     }
 }

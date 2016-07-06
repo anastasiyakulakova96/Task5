@@ -4,72 +4,71 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace Task5._1
 {
-    class ListClass
+    class SortedSetClass
     {
-       List<int> list = new List<int>();
+        SortedSet<int> sortedSet = new SortedSet<int>();
+
         private Logger logger = Logger.GetLogger();
 
         int beforeStartMethod;
         int afterStartMethod;
         int resultTime;
 
-        public void AddElementsInList()
+        public void AddElementsInSortedSet()
         {
             beforeStartMethod = Environment.TickCount;
-            list.Add(1);
-            list.Add(2);
-            list.Add(3);
-            list.Add(4);
+            sortedSet.Add(1);
+            sortedSet.Add(2);
+            sortedSet.Add(3);
+            sortedSet.Add(4);
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-           
-            logger.Log("list.Add elements. " + resultTime+"ms");
+
+            logger.Log("SortedSet.Add elements. " + resultTime + "ms");
         }
 
-        public void RemoveElementsInList()
+        public void RemoveElementsInSortedSet()
         {
             beforeStartMethod = Environment.TickCount;
-            list.RemoveAt(3);
-            list.RemoveAt(2);
-            list.RemoveAt(0);
+
+            sortedSet.Remove(4);
+            sortedSet.Remove(3);
+            sortedSet.Remove(1);
+
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-           
-            logger.Log("list.Remove elements. " + resultTime + "ms");
+
+            logger.Log("SortedSet.Remove elements. " + resultTime + "ms");
         }
 
-        public void ReadItemsFromList()
+        public void ReadItemsFromSortedSet()
         {
             beforeStartMethod = Environment.TickCount;
-            for (int i = 0; i < list.Count; i++)
+
+            foreach (int s in sortedSet)
             {
-               int temp= list[i];
+                int a = s;
             }
+
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-          
-            logger.Log("list.Read elements. " + resultTime + "ms");
+
+            logger.Log("SortedSet.Read elements. " + resultTime + "ms");
         }
 
-        public void SearchItemsInList()
+        public void SearchItemsInSortedSet()
         {
             beforeStartMethod = Environment.TickCount;
 
-            bool temp = list.Contains(1);
+            bool temp = sortedSet.Contains(1);
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-           
-            logger.Log("list.Search element. " + resultTime + "ms"+"\n");
-        }
 
-        public void CloseLogger()
-        {
-            logger.Close();
+            logger.Log("SortedSet.Search element. " + resultTime + "ms"+"\n");
         }
     }
 }

@@ -4,72 +4,72 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace Task5._1
 {
-    class ListClass
+    class QueueClass
     {
-       List<int> list = new List<int>();
+        Queue<int> queue = new Queue<int>();
+
         private Logger logger = Logger.GetLogger();
 
         int beforeStartMethod;
         int afterStartMethod;
         int resultTime;
 
-        public void AddElementsInList()
+        public void AddElementsInQueue()
         {
             beforeStartMethod = Environment.TickCount;
-            list.Add(1);
-            list.Add(2);
-            list.Add(3);
-            list.Add(4);
+            queue.Enqueue(1);
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+            queue.Enqueue(4);
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-           
-            logger.Log("list.Add elements. " + resultTime+"ms");
+
+            logger.Log("Queue.Add elements. " + resultTime + "ms");
         }
 
-        public void RemoveElementsInList()
+        public void RemoveElementsInQueue()
         {
             beforeStartMethod = Environment.TickCount;
-            list.RemoveAt(3);
-            list.RemoveAt(2);
-            list.RemoveAt(0);
+
+            queue.Dequeue();
+            queue.Dequeue();
+            queue.Dequeue();
+
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-           
-            logger.Log("list.Remove elements. " + resultTime + "ms");
+
+            logger.Log("Queue.Remove elements. " + resultTime + "ms");
         }
 
-        public void ReadItemsFromList()
+        public void ReadItemsFromQueue()
         {
             beforeStartMethod = Environment.TickCount;
-            for (int i = 0; i < list.Count; i++)
+
+            foreach (int s in queue)
             {
-               int temp= list[i];
+                int a = s;
             }
+
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-          
-            logger.Log("list.Read elements. " + resultTime + "ms");
+
+            logger.Log("Queue.Read elements. " + resultTime + "ms");
         }
 
-        public void SearchItemsInList()
+        public void SearchItemsInQueue()
         {
             beforeStartMethod = Environment.TickCount;
 
-            bool temp = list.Contains(1);
+            bool temp = queue.Contains(1);
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-           
-            logger.Log("list.Search element. " + resultTime + "ms"+"\n");
+
+            logger.Log("Queue.Search element. " + resultTime + "ms"+"\n");
         }
 
-        public void CloseLogger()
-        {
-            logger.Close();
-        }
     }
 }
