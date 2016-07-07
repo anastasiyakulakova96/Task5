@@ -61,6 +61,15 @@ namespace Task5._1 {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 50000.
+        /// </summary>
+        internal static string countOfElements {
+            get {
+                return ResourceManager.GetString("countOfElements", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to log.txt.
         /// </summary>
         internal static string nameFile {
@@ -70,7 +79,7 @@ namespace Task5._1 {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to f:\.
+        ///   Looks up a localized string similar to d:\.
         /// </summary>
         internal static string path {
             get {

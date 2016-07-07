@@ -11,7 +11,7 @@ namespace Task5._1
         // private static Logger logger;
         static void Main(string[] args)
         {
-            Launcher launcher = new Launcher();
+            //Launcher launcher = new Launcher();
             ListClass listClass = new ListClass();
             LinkedListClass linkedListClass = new LinkedListClass();
             DictionaryClass dictionaryClass = new DictionaryClass();

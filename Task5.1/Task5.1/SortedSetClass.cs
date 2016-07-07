@@ -15,14 +15,16 @@ namespace Task5._1
         int beforeStartMethod;
         int afterStartMethod;
         int resultTime;
+        int countOfElements = Int32.Parse(Data.countOfElements);
 
         public void AddElementsInSortedSet()
         {
             beforeStartMethod = Environment.TickCount;
-            sortedSet.Add(1);
-            sortedSet.Add(2);
-            sortedSet.Add(3);
-            sortedSet.Add(4);
+
+            for (int i = 0; i < countOfElements; i++)
+            {
+                sortedSet.Add(i);
+            }
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
@@ -34,9 +36,10 @@ namespace Task5._1
         {
             beforeStartMethod = Environment.TickCount;
 
-            sortedSet.Remove(4);
-            sortedSet.Remove(3);
-            sortedSet.Remove(1);
+            for (int i = 0; i < countOfElements; i++)
+            {
+                sortedSet.Remove(i);
+            }
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
@@ -68,7 +71,7 @@ namespace Task5._1
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
 
-            logger.Log("SortedSet.Search element. " + resultTime + "ms"+"\n");
+            logger.Log("SortedSet.Search element. " + resultTime + "ms" + "\n");
         }
     }
 }

@@ -14,43 +14,50 @@ namespace Task5._1
         int beforeStartMethod;
         int afterStartMethod;
         int resultTime;
+        int countOfElements = Int32.Parse(Data.countOfElements);
+
         public void AddElementsInLinkedList()
         {
             beforeStartMethod = Environment.TickCount;
-            linkedList.AddFirst(1);
-            linkedList.AddLast(2);
-            linkedList.AddLast(3);
-            linkedList.AddLast(4);
+
+            for (int i = 0; i < countOfElements; i++)
+            {
+                linkedList.AddFirst(i);
+            }
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-            
+
             logger.Log("LinkedList.Add elements. " + resultTime + "ms");
         }
 
         public void RemoveElementsInLinkedList()
         {
             beforeStartMethod = Environment.TickCount;
-            linkedList.Remove(3);
-            linkedList.Remove(2);
-            linkedList.Remove(0);
+
+            for (int i = 0; i < countOfElements; i++)
+            {
+                linkedList.Remove(i);
+            }
+
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-           
+
             logger.Log("LinkedList.Remove elements. " + resultTime + "ms");
         }
 
         public void ReadItemsFromLinkedList()
         {
             beforeStartMethod = Environment.TickCount;
-            
+
             foreach (int s in linkedList)
             {
                 int a = s;
             }
+
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-            
+
             logger.Log("LinkedList.Read elements. " + resultTime + "ms");
         }
 
@@ -62,8 +69,8 @@ namespace Task5._1
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-            
-            logger.Log("LinkedList.Search element. " + resultTime + "ms"+"\n");
+
+            logger.Log("LinkedList.Search element. " + resultTime + "ms" + "\n");
         }
 
         public void CloseLogger()

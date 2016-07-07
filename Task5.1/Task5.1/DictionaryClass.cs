@@ -15,18 +15,20 @@ namespace Task5._1
         int beforeStartMethod;
         int afterStartMethod;
         int resultTime;
+        int countOfElements = Int32.Parse(Data.countOfElements);
 
         public void AddElementsInDictionary()
         {
             beforeStartMethod = Environment.TickCount;
-            dictionary.Add(1,1);
-            dictionary.Add(2, 2);
-            dictionary.Add(3, 3);
-            dictionary.Add(4, 4);
+
+            for (int i = 0; i < countOfElements; i++)
+            {
+                dictionary.Add(i, i);
+            }
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-          
+
             logger.Log("Dictionary.Add elements. " + resultTime + "ms");
         }
 
@@ -34,12 +36,14 @@ namespace Task5._1
         {
             beforeStartMethod = Environment.TickCount;
 
-            dictionary.Remove(4);
-            dictionary.Remove(2);
-            dictionary.Remove(1);
+            for (int i = 0; i < countOfElements; i++)
+            {
+                dictionary.Remove(i);
+            }
+
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-            
+
             logger.Log("Dictionary.Remove elements. " + resultTime + "ms");
         }
 
@@ -47,7 +51,7 @@ namespace Task5._1
         {
             beforeStartMethod = Environment.TickCount;
 
-            foreach ( int s in dictionary.Keys)
+            foreach (int s in dictionary.Keys)
             {
                 int a = s;
             }
@@ -58,7 +62,7 @@ namespace Task5._1
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
 
-           logger.Log("Dictionary.Read elements. " + resultTime + "ms");
+            logger.Log("Dictionary.Read elements. " + resultTime + "ms");
         }
 
         public void SearchItemsInDictionaryt()
@@ -70,7 +74,7 @@ namespace Task5._1
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
 
-            logger.Log("Dictionary.Search element. " + resultTime + "ms"+"\n");
+            logger.Log("Dictionary.Search element. " + resultTime + "ms" + "\n");
         }
 
     }

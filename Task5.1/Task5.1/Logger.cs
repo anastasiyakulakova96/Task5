@@ -7,39 +7,39 @@ using System.Threading.Tasks;
 
 namespace Task5._1
 {
-      class Logger
+    class Logger
+    {
+        public static string pathWithNameFile = Data.path + @"\" + Data.nameFile;
+
+        private static Logger logger;
+        private StreamWriter writer;
+
+        private Logger()
         {
-            public static string pathWithNameFile = Data.path + @"\" + Data.nameFile;
+            writer = new StreamWriter(File.Create(pathWithNameFile));
+        }
 
-            private static Logger logger;
-            private StreamWriter writer;
-
-            private Logger()
+        public static Logger GetLogger()
+        {
+            if (logger == null)
             {
-                writer = new StreamWriter(File.Create(pathWithNameFile));
+                logger = new Logger();
             }
+            return logger;
+        }
 
-            public static Logger GetLogger()
-            {
-                if (logger == null)
-                {
-                    logger = new Logger();
-                }
-                return logger;
-            }
+        public void Log(String message)
+        {
+            writer.WriteLine(message);
+        }
 
-            public void Log(String message)
-            {
-                writer.WriteLine(message);
-            }
+        public void Close()
+        {
+            writer.Close();
+        }
 
-            public void Close()
-            {
-                writer.Close();
-            }
 
-       
     }
-    }
+}
 
 

@@ -9,49 +9,53 @@ namespace Task5._1
 {
     class ListClass
     {
-       List<int> list = new List<int>();
+        List<int> list = new List<int>();
         private Logger logger = Logger.GetLogger();
 
         int beforeStartMethod;
         int afterStartMethod;
         int resultTime;
+        int countOfElements = Int32.Parse(Data.countOfElements);
 
         public void AddElementsInList()
         {
             beforeStartMethod = Environment.TickCount;
-            list.Add(1);
-            list.Add(2);
-            list.Add(3);
-            list.Add(4);
+
+            for (int i = 0; i < countOfElements; i++)
+            {
+                list.Add(i);
+            }
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-           
-            logger.Log("list.Add elements. " + resultTime+"ms");
+
+            logger.Log("list.Add elements. " + resultTime + "ms");
         }
 
         public void RemoveElementsInList()
         {
             beforeStartMethod = Environment.TickCount;
-            list.RemoveAt(3);
-            list.RemoveAt(2);
+
+
             list.RemoveAt(0);
-            afterStartMethod = Environment.TickCount;
+        afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-           
+
             logger.Log("list.Remove elements. " + resultTime + "ms");
         }
 
         public void ReadItemsFromList()
         {
             beforeStartMethod = Environment.TickCount;
+
             for (int i = 0; i < list.Count; i++)
             {
-               int temp= list[i];
+                int temp = list[i];
             }
+
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-          
+
             logger.Log("list.Read elements. " + resultTime + "ms");
         }
 
@@ -63,8 +67,8 @@ namespace Task5._1
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
-           
-            logger.Log("list.Search element. " + resultTime + "ms"+"\n");
+
+            logger.Log("list.Search element. " + resultTime + "ms" + "\n");
         }
 
         public void CloseLogger()

@@ -15,14 +15,16 @@ namespace Task5._1
         int beforeStartMethod;
         int afterStartMethod;
         int resultTime;
+        int countOfElements = Int32.Parse(Data.countOfElements);
 
         public void AddElementsInQueue()
         {
             beforeStartMethod = Environment.TickCount;
-            queue.Enqueue(1);
-            queue.Enqueue(2);
-            queue.Enqueue(3);
-            queue.Enqueue(4);
+
+            for (int i = 0; i < countOfElements; i++)
+            {
+                queue.Enqueue(i);
+            }
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
@@ -34,9 +36,10 @@ namespace Task5._1
         {
             beforeStartMethod = Environment.TickCount;
 
-            queue.Dequeue();
-            queue.Dequeue();
-            queue.Dequeue();
+            for (int i = 0; i < queue.Count; i++)
+            {
+                queue.Dequeue();
+            }
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
@@ -68,7 +71,7 @@ namespace Task5._1
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
 
-            logger.Log("Queue.Search element. " + resultTime + "ms"+"\n");
+            logger.Log("Queue.Search element. " + resultTime + "ms" + "\n");
         }
 
     }

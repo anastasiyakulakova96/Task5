@@ -8,20 +8,22 @@ namespace Task5._1
 {
     class SortedDictionaryClass
     {
-        SortedDictionary<int,int> sortedDictionary = new SortedDictionary<int,int>();
+        SortedDictionary<int, int> sortedDictionary = new SortedDictionary<int, int>();
         private Logger logger = Logger.GetLogger();
 
         int beforeStartMethod;
         int afterStartMethod;
         int resultTime;
+        int countOfElements = Int32.Parse(Data.countOfElements);
 
         public void AddElementsInSortedDictionary()
         {
             beforeStartMethod = Environment.TickCount;
-            sortedDictionary.Add(1,1);
-            sortedDictionary.Add(2,2);
-            sortedDictionary.Add(3,3);
-            sortedDictionary.Add(4,4);
+
+            for (int i = 0; i < countOfElements; i++)
+            {
+                sortedDictionary.Add(i, i);
+            }
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
@@ -33,9 +35,10 @@ namespace Task5._1
         {
             beforeStartMethod = Environment.TickCount;
 
-            sortedDictionary.Remove(4);
-            sortedDictionary.Remove(3);
-            sortedDictionary.Remove(1);
+            for (int i = 0; i < countOfElements; i++)
+            {
+                sortedDictionary.Remove(i);
+            }
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
@@ -71,7 +74,7 @@ namespace Task5._1
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
 
-            logger.Log("SortedDictionary.Search element. " + resultTime + "ms"+"\n");
+            logger.Log("SortedDictionary.Search element. " + resultTime + "ms" + "\n");
         }
     }
 }

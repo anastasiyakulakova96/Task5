@@ -14,14 +14,16 @@ namespace Task5._1
         int beforeStartMethod;
         int afterStartMethod;
         int resultTime;
+        int countOfElements = Int32.Parse(Data.countOfElements);
 
         public void AddElementsInStack()
         {
             beforeStartMethod = Environment.TickCount;
-            stack.Push(1);
-            stack.Push(2);
-            stack.Push(3);
-            stack.Push(4);
+
+            for (int i = 0; i < countOfElements; i++)
+            {
+                stack.Push(i);
+            }
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
@@ -33,9 +35,10 @@ namespace Task5._1
         {
             beforeStartMethod = Environment.TickCount;
 
-            stack.Pop();
-            stack.Pop();
-            stack.Pop();
+            for (int i = 0; i < countOfElements; i++)
+            {
+                stack.Pop();
+            }
 
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
@@ -67,7 +70,7 @@ namespace Task5._1
             afterStartMethod = Environment.TickCount;
             resultTime = afterStartMethod - beforeStartMethod;
 
-            logger.Log("Stack.Search element. " + resultTime + "ms"+"\n");
+            logger.Log("Stack.Search element. " + resultTime + "ms" + "\n");
         }
     }
 }
