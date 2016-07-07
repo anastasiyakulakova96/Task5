@@ -6,76 +6,46 @@ using System.Threading.Tasks;
 
 namespace Task5._1
 {
-    class LinkedListClass
+    class LinkedListClass : Collectionable
     {
         LinkedList<int> linkedList = new LinkedList<int>();
-        private Logger logger = Logger.GetLogger();
-
-        int beforeStartMethod;
-        int afterStartMethod;
-        int resultTime;
+       
         int countOfElements = Int32.Parse(Data.countOfElements);
 
-        public void AddElementsInLinkedList()
+        public void AddElements()
         {
-            beforeStartMethod = Environment.TickCount;
-
             for (int i = 0; i < countOfElements; i++)
             {
                 linkedList.AddFirst(i);
             }
-
-            afterStartMethod = Environment.TickCount;
-            resultTime = afterStartMethod - beforeStartMethod;
-
-            logger.Log("LinkedList.Add elements. " + resultTime + "ms");
         }
 
-        public void RemoveElementsInLinkedList()
-        {
-            beforeStartMethod = Environment.TickCount;
 
+        public void RemoveElements()
+        {
             for (int i = 0; i < countOfElements; i++)
             {
                 linkedList.Remove(i);
             }
-
-            afterStartMethod = Environment.TickCount;
-            resultTime = afterStartMethod - beforeStartMethod;
-
-            logger.Log("LinkedList.Remove elements. " + resultTime + "ms");
         }
 
-        public void ReadItemsFromLinkedList()
-        {
-            beforeStartMethod = Environment.TickCount;
 
+        public void GetElements()
+        {
             foreach (int s in linkedList)
             {
                 int a = s;
             }
-
-            afterStartMethod = Environment.TickCount;
-            resultTime = afterStartMethod - beforeStartMethod;
-
-            logger.Log("LinkedList.Read elements. " + resultTime + "ms");
         }
 
-        public void SearchItemsInLinkedList()
+
+        public void SearchElement()
         {
-            beforeStartMethod = Environment.TickCount;
-
-            bool temp = linkedList.Contains(1);
-
-            afterStartMethod = Environment.TickCount;
-            resultTime = afterStartMethod - beforeStartMethod;
-
-            logger.Log("LinkedList.Search element. " + resultTime + "ms" + "\n");
+            for (int i = 0; i < countOfElements; i++)
+            {
+                bool temp = linkedList.Contains(i);
+            }
         }
 
-        public void CloseLogger()
-        {
-            logger.Close();
-        }
     }
 }

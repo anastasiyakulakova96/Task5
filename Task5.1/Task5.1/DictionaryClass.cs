@@ -6,76 +6,42 @@ using System.Threading.Tasks;
 
 namespace Task5._1
 {
-    class DictionaryClass
+    class DictionaryClass : Collectionable
     {
         Dictionary<int, int> dictionary = new Dictionary<int, int>();
 
-        private Logger logger = Logger.GetLogger();
-
-        int beforeStartMethod;
-        int afterStartMethod;
-        int resultTime;
         int countOfElements = Int32.Parse(Data.countOfElements);
 
-        public void AddElementsInDictionary()
+        public void AddElements()
         {
-            beforeStartMethod = Environment.TickCount;
-
             for (int i = 0; i < countOfElements; i++)
             {
                 dictionary.Add(i, i);
             }
-
-            afterStartMethod = Environment.TickCount;
-            resultTime = afterStartMethod - beforeStartMethod;
-
-            logger.Log("Dictionary.Add elements. " + resultTime + "ms");
         }
 
-        public void RemoveElementsInDictionary()
+        public void RemoveElements()
         {
-            beforeStartMethod = Environment.TickCount;
-
             for (int i = 0; i < countOfElements; i++)
             {
                 dictionary.Remove(i);
             }
-
-            afterStartMethod = Environment.TickCount;
-            resultTime = afterStartMethod - beforeStartMethod;
-
-            logger.Log("Dictionary.Remove elements. " + resultTime + "ms");
         }
 
-        public void ReadItemsFromDictionary()
+        public void GetElements()
         {
-            beforeStartMethod = Environment.TickCount;
-
             foreach (int s in dictionary.Keys)
             {
                 int a = s;
             }
-            foreach (int s in dictionary.Values)
-            {
-                int a = s;
-            }
-            afterStartMethod = Environment.TickCount;
-            resultTime = afterStartMethod - beforeStartMethod;
-
-            logger.Log("Dictionary.Read elements. " + resultTime + "ms");
         }
 
-        public void SearchItemsInDictionaryt()
+        public void SearchElement()
         {
-            beforeStartMethod = Environment.TickCount;
-
-            bool temp = dictionary.ContainsKey(1);
-
-            afterStartMethod = Environment.TickCount;
-            resultTime = afterStartMethod - beforeStartMethod;
-
-            logger.Log("Dictionary.Search element. " + resultTime + "ms" + "\n");
+            for (int i = 0; i < countOfElements; i++)
+            {
+                bool temp = dictionary.ContainsKey(i);
+            }
         }
-
     }
 }

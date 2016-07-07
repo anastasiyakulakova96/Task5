@@ -33,6 +33,13 @@ namespace Task5._1
             writer.WriteLine(message);
         }
 
+
+        public static void CountOfElements()
+        {
+            logger.Log("Count of elements= "+ Int32.Parse(Data.countOfElements));
+            logger.Log("");
+        }
+
         public void Close()
         {
             writer.Close();
