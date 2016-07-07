@@ -1,0 +1,10 @@
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Test\bin\Debug\Test.dll
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Test\bin\Debug\Test.pdb
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Test\bin\Debug\Math.dll
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Test\bin\Debug\Math.pdb
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Test\obj\Debug\Test.dll
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Test\obj\Debug\Test.pdb
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Test\obj\Debug\Test.Data.resources

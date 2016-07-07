@@ -1,0 +1,10 @@
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Math\bin\Debug\Math.dll
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Math\bin\Debug\Math.pdb
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Math\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Math\bin\Debug\nunit.framework.dll
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Math\bin\Debug\WebDriver.dll
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Math\bin\Debug\nunit.framework.xml
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Math\bin\Debug\WebDriver.xml
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Math\obj\Debug\Math.csprojResolveAssemblyReference.cache
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Math\obj\Debug\Math.dll
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Math\obj\Debug\Math.pdb

@@ -1,0 +1,15 @@
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\bin\Debug\Math.dll
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\bin\Debug\nunit.framework.dll
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\bin\Debug\WebDriver.dll
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\bin\Debug\Math.pdb
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\bin\Debug\nunit.framework.xml
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\bin\Debug\WebDriver.xml
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.Resource.resources
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.csproj.GenerateResource.Cache
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
