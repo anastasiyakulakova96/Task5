@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Task5._1
 {
-    class CollectionsTimeTest
+    class CalculatorForTime
     {
         List<Collectionable> collections = new List<Collectionable>();
         Stopwatch stopwatch = new Stopwatch();
         private Logger logger = Logger.GetLogger();
 
-       public void AddCollections()
+        public void AddCollections()
         {
             collections.Add(new ListClass());
             collections.Add(new DictionaryClass());
@@ -77,6 +77,15 @@ namespace Task5._1
                 logger.Log(c.GetType().Name + " " + stopwatch.ElapsedMilliseconds + "ms");
                 stopwatch.Reset();
             }
+        }
+
+
+        public void CalculateTime()
+        {
+            TimeTestForAdd();
+            TimeTestForGet();
+            TimeTestForRemove();
+            TimeTestForSearch();
         }
     }
 }

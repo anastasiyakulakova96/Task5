@@ -13,3 +13,6 @@ C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\obj\Debu
 C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.csproj.GenerateResource.Cache
 C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.exe
 C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+C:\Task5\Test\ConsoleApplication\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
+C:\Task5\Test\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+C:\Task5\Test\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.pdb

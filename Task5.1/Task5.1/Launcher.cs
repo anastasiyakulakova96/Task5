@@ -11,17 +11,13 @@ namespace Task5._1
 
         static void Main(string[] args)
         {
-            LinkedListClass linkedListClass = new LinkedListClass();
-            CollectionsTimeTest col = new CollectionsTimeTest();
+            CalculatorForTime col = new CalculatorForTime();
 
             Console.WriteLine("Please,wait");
 
             Logger.CountOfElements();
             col.AddCollections();
-            col.TimeTestForAdd();
-            col.TimeTestForGet();
-            col.TimeTestForRemove();
-            col.TimeTestForSearch();
+            col.CalculateTime();
 
             Console.WriteLine($"Perform the functions of the time you can see {Logger.pathWithNameFile} ");
 
