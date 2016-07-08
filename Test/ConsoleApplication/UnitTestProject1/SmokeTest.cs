@@ -13,7 +13,7 @@ namespace UnitTestProject1
     {
 
         int firstNumber = Int32.Parse(Data.firstNumber1);
-        int secondNumber = Int32.Parse(Data.firstNumber2);
+        int secondNumber = Int32.Parse(Data.secondNumber1);
 
         Calculator calc = new Calculator();
 

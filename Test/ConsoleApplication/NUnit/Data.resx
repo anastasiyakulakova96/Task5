@@ -117,10 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="firsNumber1" xml:space="preserve">
+  <data name="firsNumber2" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="firstNumber1" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="secondNumber1" xml:space="preserve">
     <value>-5</value>
+  </data>
+  <data name="secondNumber2" xml:space="preserve">
+    <value>0</value>
   </data>
 </root>

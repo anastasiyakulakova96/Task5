@@ -16,3 +16,15 @@ C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\ConsoleApplication\obj\Debu
 C:\Task5\Test\ConsoleApplication\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
 C:\Task5\Test\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.exe
 C:\Task5\Test\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+C:\Task5\Test\ConsoleApplication\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+C:\Task5\Test\ConsoleApplication\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+C:\Task5\Test\ConsoleApplication\ConsoleApplication\bin\Debug\Math.dll
+C:\Task5\Test\ConsoleApplication\ConsoleApplication\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Task5\Test\ConsoleApplication\ConsoleApplication\bin\Debug\nunit.framework.dll
+C:\Task5\Test\ConsoleApplication\ConsoleApplication\bin\Debug\WebDriver.dll
+C:\Task5\Test\ConsoleApplication\ConsoleApplication\bin\Debug\Math.pdb
+C:\Task5\Test\ConsoleApplication\ConsoleApplication\bin\Debug\nunit.framework.xml
+C:\Task5\Test\ConsoleApplication\ConsoleApplication\bin\Debug\WebDriver.xml
+C:\Task5\Test\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
+C:\Task5\Test\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.Resource.resources
+C:\Task5\Test\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.csproj.GenerateResource.Cache

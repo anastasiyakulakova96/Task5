@@ -8,3 +8,13 @@ C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Math\bin\Debug\WebDriver.xm
 C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Math\obj\Debug\Math.csprojResolveAssemblyReference.cache
 C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Math\obj\Debug\Math.dll
 C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\Math\obj\Debug\Math.pdb
+C:\Task5\Test\ConsoleApplication\Math\bin\Debug\Math.dll
+C:\Task5\Test\ConsoleApplication\Math\bin\Debug\Math.pdb
+C:\Task5\Test\ConsoleApplication\Math\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Task5\Test\ConsoleApplication\Math\bin\Debug\nunit.framework.dll
+C:\Task5\Test\ConsoleApplication\Math\bin\Debug\WebDriver.dll
+C:\Task5\Test\ConsoleApplication\Math\bin\Debug\nunit.framework.xml
+C:\Task5\Test\ConsoleApplication\Math\bin\Debug\WebDriver.xml
+C:\Task5\Test\ConsoleApplication\Math\obj\Debug\Math.csprojResolveAssemblyReference.cache
+C:\Task5\Test\ConsoleApplication\Math\obj\Debug\Math.dll
+C:\Task5\Test\ConsoleApplication\Math\obj\Debug\Math.pdb

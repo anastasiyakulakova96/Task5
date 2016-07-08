@@ -56,7 +56,7 @@ namespace UnitTestProject1
             [Owner("user")]
             public void TestCheckSumWithBigInt()
             {
-                Assert.AreEqual(((long)firstNumber + (long)secondNumber), calc.Sum(firstNumber, secondNumber));
+                Assert.AreEqual(((long)(Int32.MaxValue) + (long)(Int32.MaxValue)), calc.Sum((Int32.MaxValue), (Int32.MaxValue)));
             }
 
             [TestMethod]

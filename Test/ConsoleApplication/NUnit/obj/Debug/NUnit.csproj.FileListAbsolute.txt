@@ -1,0 +1,12 @@
+C:\Task5\Test\ConsoleApplication\NUnit\bin\Debug\NUnit.dll
+C:\Task5\Test\ConsoleApplication\NUnit\bin\Debug\NUnit.pdb
+C:\Task5\Test\ConsoleApplication\NUnit\bin\Debug\Math.dll
+C:\Task5\Test\ConsoleApplication\NUnit\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Task5\Test\ConsoleApplication\NUnit\bin\Debug\nunit.framework.dll
+C:\Task5\Test\ConsoleApplication\NUnit\bin\Debug\Math.pdb
+C:\Task5\Test\ConsoleApplication\NUnit\bin\Debug\nunit.framework.xml
+C:\Task5\Test\ConsoleApplication\NUnit\obj\Debug\NUnit.csprojResolveAssemblyReference.cache
+C:\Task5\Test\ConsoleApplication\NUnit\obj\Debug\NUnit.Data.resources
+C:\Task5\Test\ConsoleApplication\NUnit\obj\Debug\NUnit.csproj.GenerateResource.Cache
+C:\Task5\Test\ConsoleApplication\NUnit\obj\Debug\NUnit.dll
+C:\Task5\Test\ConsoleApplication\NUnit\obj\Debug\NUnit.pdb

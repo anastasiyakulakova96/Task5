@@ -8,3 +8,13 @@ C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\UnitTestProject1\obj\Debug\
 C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
 C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\UnitTestProject1\bin\Debug\OrderedTest1.orderedtest
 C:\Users\Anastasiya_Kulakova\.NET\ConsoleApplication\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\Task5\Test\ConsoleApplication\UnitTestProject1\bin\Debug\OrderedTest1.orderedtest
+C:\Task5\Test\ConsoleApplication\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Task5\Test\ConsoleApplication\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Task5\Test\ConsoleApplication\UnitTestProject1\bin\Debug\Math.dll
+C:\Task5\Test\ConsoleApplication\UnitTestProject1\bin\Debug\Math.pdb
+C:\Task5\Test\ConsoleApplication\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\Task5\Test\ConsoleApplication\UnitTestProject1\obj\Debug\UnitTestProject1.Data.resources
+C:\Task5\Test\ConsoleApplication\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.GenerateResource.Cache
+C:\Task5\Test\ConsoleApplication\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Task5\Test\ConsoleApplication\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

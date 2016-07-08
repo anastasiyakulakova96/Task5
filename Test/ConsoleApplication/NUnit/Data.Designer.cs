@@ -61,11 +61,20 @@ namespace NUnit {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 4.
+        /// </summary>
+        internal static string firsNumber2 {
+            get {
+                return ResourceManager.GetString("firsNumber2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 3.
         /// </summary>
-        internal static string firsNumber1 {
+        internal static string firstNumber1 {
             get {
-                return ResourceManager.GetString("firsNumber1", resourceCulture);
+                return ResourceManager.GetString("firstNumber1", resourceCulture);
             }
         }
         
@@ -75,6 +84,15 @@ namespace NUnit {
         internal static string secondNumber1 {
             get {
                 return ResourceManager.GetString("secondNumber1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 0.
+        /// </summary>
+        internal static string secondNumber2 {
+            get {
+                return ResourceManager.GetString("secondNumber2", resourceCulture);
             }
         }
     }
