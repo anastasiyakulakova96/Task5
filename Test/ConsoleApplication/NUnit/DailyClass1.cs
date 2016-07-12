@@ -51,7 +51,7 @@ namespace NUnit
         }
 
         [Test]
-        [Timeout(20)]
+        [Timeout(40)]
         [Description("This test doing check sum. Big int")]
         public void TestCheckSumWithBigInt()
         {

@@ -18,3 +18,6 @@ C:\Task5\Test\ConsoleApplication\UnitTestProject1\obj\Debug\UnitTestProject1.Dat
 C:\Task5\Test\ConsoleApplication\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.GenerateResource.Cache
 C:\Task5\Test\ConsoleApplication\UnitTestProject1\obj\Debug\UnitTestProject1.dll
 C:\Task5\Test\ConsoleApplication\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+C:\Task5\Test\ConsoleApplication\UnitTestProject1\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Task5\Test\ConsoleApplication\UnitTestProject1\bin\Debug\xunit.runner.utility.desktop.dll
+C:\Task5\Test\ConsoleApplication\UnitTestProject1\bin\Debug\xunit.abstractions.dll

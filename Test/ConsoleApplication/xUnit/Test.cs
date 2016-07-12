@@ -5,15 +5,16 @@ using Math;
 namespace xUnit
 {
 
-    public class SmokeTest2
+    public class Test
     {
-       
+
         int firstNumber = Int32.Parse(Data.firstNumber1);
         int secondNumber = Int32.Parse(Data.secondNumber1);
+        int firstNumber2 = Int32.Parse(Data.firstNumber2);
+        int secondNumber2 = Int32.Parse(Data.secondNumber2);
 
         Calculator calc = new Calculator();
 
-       
         [Fact]
         public void TestCheckSum1()
         {
@@ -63,6 +64,20 @@ namespace xUnit
         {
             Assert.Equal(((double)secondNumber / (double)firstNumber), calc.Division(secondNumber, firstNumber));
         }
-    }
+
+                                            
+        [Fact]
+        public void TestCheckSumWithZero()
+        {
+            Assert.Equal(((long)firstNumber2 + (long)secondNumber2), calc.Sum(firstNumber2, secondNumber2));
+        }
+
+        [Fact]
+        public void TestCheckSumWithBigInt()
+        {
+            Assert.Equal((long)(Int32.MaxValue) + (long)(Int32.MaxValue), calc.Sum((long)(Int32.MaxValue), (long)(Int32.MaxValue)));
+        }
+
+}
 }
 

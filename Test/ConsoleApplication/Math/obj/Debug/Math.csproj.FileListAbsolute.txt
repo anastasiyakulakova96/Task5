@@ -18,3 +18,6 @@ C:\Task5\Test\ConsoleApplication\Math\bin\Debug\WebDriver.xml
 C:\Task5\Test\ConsoleApplication\Math\obj\Debug\Math.csprojResolveAssemblyReference.cache
 C:\Task5\Test\ConsoleApplication\Math\obj\Debug\Math.dll
 C:\Task5\Test\ConsoleApplication\Math\obj\Debug\Math.pdb
+C:\Task5\Test\ConsoleApplication\Math\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Task5\Test\ConsoleApplication\Math\bin\Debug\xunit.runner.utility.desktop.dll
+C:\Task5\Test\ConsoleApplication\Math\bin\Debug\xunit.abstractions.dll

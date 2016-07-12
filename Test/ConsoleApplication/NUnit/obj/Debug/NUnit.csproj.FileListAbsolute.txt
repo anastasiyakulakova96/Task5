@@ -10,3 +10,6 @@ C:\Task5\Test\ConsoleApplication\NUnit\obj\Debug\NUnit.Data.resources
 C:\Task5\Test\ConsoleApplication\NUnit\obj\Debug\NUnit.csproj.GenerateResource.Cache
 C:\Task5\Test\ConsoleApplication\NUnit\obj\Debug\NUnit.dll
 C:\Task5\Test\ConsoleApplication\NUnit\obj\Debug\NUnit.pdb
+C:\Task5\Test\ConsoleApplication\NUnit\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Task5\Test\ConsoleApplication\NUnit\bin\Debug\xunit.runner.utility.desktop.dll
+C:\Task5\Test\ConsoleApplication\NUnit\bin\Debug\xunit.abstractions.dll

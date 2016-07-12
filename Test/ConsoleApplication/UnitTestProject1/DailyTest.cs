@@ -99,7 +99,7 @@ namespace UnitTestProject1
 
 
             [TestMethod]
-            [Timeout(10)]
+            [Timeout(1000)]
             [Description("This test doing check division.Zero number")]
             [Owner("user")]
             [ExpectedException(typeof(DivideByZeroException))]

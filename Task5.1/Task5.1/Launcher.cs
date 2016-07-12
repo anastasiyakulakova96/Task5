@@ -19,7 +19,7 @@ namespace Task5._1
             col.AddCollections();
             col.CalculateTime();
 
-            Console.WriteLine($"Perform the functions of the time you can see {Logger.pathWithNameFile} ");
+            Console.WriteLine($"Perform the functions of the time you can see {Logger.pathWithNameFile}. For exit press any symbol ");
 
             Logger.GetLogger().Close();
 

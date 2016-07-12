@@ -17,10 +17,10 @@ namespace Task5._1
         {
             collections.Add(new ListClass());
             collections.Add(new DictionaryClass());
-            collections.Add(new LinkedListClass());
+            //collections.Add(new LinkedListClass());
             collections.Add(new QueueClass());
-            collections.Add(new SortedDictionaryClass());
-            collections.Add(new SortedSetClass());
+            //collections.Add(new SortedDictionaryClass());
+            //collections.Add(new SortedSetClass());
             collections.Add(new StackClass());
         }
 
